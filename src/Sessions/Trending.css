@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.trending {
+  padding: 40px;
+  background: white;
+}
+
+.trending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trending-header h2 {
+  font-size: 28px;
+}
+.trend-icon {
+  color: #ff5a5f;
+  margin-right: 8px;
+}
+.view-all {
+  color: #ff5a5f;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.sub-text {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 32%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Image */
+.card-img {
+  position: relative;
+  overflow: hidden;   /* important */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.card:hover .card-img img {
+  transform: scale(1.1);
+}
+/* Recipe tag */
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff5a5f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Rating */
+.rating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Content */
+.card-content {
+  padding: 15px;
+}
+
+.meta {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.heart {
+  cursor: pointer;
+  color: gray;
+}
+
+.heart:hover {
+  color: red;
+}

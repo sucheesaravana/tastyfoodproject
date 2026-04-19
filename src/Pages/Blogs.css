@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.b-banner {
+  height: 250px;
+  /* background: url("tastyfoodproject/src/assets/b4.png") center/cover no-repeat; */
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  text-align: center;
+}
+.b-banner h1 {
+  font-size: 36px;
+  /* margin-top: 5px; */
+}
+.b-banner p {
+  font-size: 16px;
+}
+/* Category */
+.b-category-bar {
+  padding: 20px;
+}
+.b-category-bar select {
+  padding: 10px;
+  border-radius: 6px;
+}
+/* Layout */
+.b-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+/* Left Cards */
+.b-left {
+  flex: 3;
+}
+.b-card {
+  display: flex;
+  gap: 15px;
+ margin-bottom: 20px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.b-card img {
+  width: 200px;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.b-card-content h3 {
+  color: #e74c3c;
+}
+.b-date {
+  font-size: 12px;
+  color: gray;
+}
+.b-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+ margin: 8px 0;
+}
+.b-read-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Right Sidebar */
+.b-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+ gap: 20px;
+}
+.b-sidebar-box {
+  border: 1px solid #f1c1c1;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+.b-primary-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.b-sidebar-image img{
+    width:100%;
+    height: fit-content;
+}
+
+.b-sidebar-box h2{
+    color:red
+}
+.b-secondary-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .b-content {
+    flex-direction: column;
+  }
+  .b-card {
+    flex-direction: column;
+  }
+  .b-card img {
+    width: 100%;
+  }
+}
+
