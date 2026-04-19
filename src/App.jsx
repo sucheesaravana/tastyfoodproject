@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
-import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
-import Recipes from "./pages/Recipes";
-import Write from "./pages/Write";
+import Home from "./Pages/Home";
+import Blogs from "./Pages/Blogs";
+import Recipes from "./Pages/Recipes";
+import Write from "./Pages/Write";
 
 function App() {
   return (
