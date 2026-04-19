@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Write.css";
 import b2 from "../assets/b2.png"; 
-const Write = () => {
+
+function Write  ()  {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
