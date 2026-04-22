@@ -3,12 +3,13 @@ import "./Trending.css";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { FaStar, FaRegHeart } from "react-icons/fa";
 import { FiClock } from "react-icons/fi";
-
+import { useNavigate } from "react-router-dom";
 import a17 from "../assets/a17.jpg";
 import a16 from "../assets/a16.jpg";
 import a12 from "../assets/a12.jpg";
 
 function Trending() {
+  const navigate = useNavigate();
   const data = [
     {
       img: a17,
@@ -43,7 +44,13 @@ function Trending() {
     <div className="trending">
       <div className="trending-header">
         <h2><FaArrowTrendUp className="trend-icon" /> Trending Now</h2>
-        <span className="view-all">View all →</span>
+        <span 
+  className="view-all"
+  onClick={() => navigate("/Recipes")}
+  style={{ cursor: "pointer" }}
+>
+  View all →
+</span>
       </div>
 
       <p className="sub-text">

@@ -1,0 +1,175 @@
+
+.profile-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.p-banner {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #222;
+  text-align: center;
+}
+/* LEFT PANEL */
+.profile-left {
+  width: 250px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: purple;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.update-btn {
+  margin-top: 10px;
+  padding: 8px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+/* RIGHT PANEL */
+.profile-right {
+  flex: 1;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+/* BLOG GRID */
+.p-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.p-blog-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.p-blog-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* OVERLAY */
+.p-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* SHOW ON HOVER */
+.p-blog-card:hover .p-card-overlay {
+  opacity: 1;
+}
+
+/* BUTTONS */
+.p-edit-btn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.p-unpublish-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.location{
+    padding: 10px;
+    margin-top: 10px;
+}
+.bio{
+    padding: 10px;
+    margin-top: 10px;
+}
+.act{
+    justify-content: start;
+    margin-top: 10px;
+}
+.p-button button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.p-button button:hover {
+  background: #ddd;
+}
+/* .profile-blog{
+  margin-top: 10px;
+  padding: 8px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  justify-content: flex-end;
+} */
+ .profile-top {
+  display: flex;
+  justify-content: flex-end;  /* pushes button to right */
+  margin-bottom: 15px;
+}
+.profile-blog {
+  display: block;
+  margin-left: auto;
+   background: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 8px;
+}
+.x .y{
+ display: flex;
+  justify-content: flex-end;
+}

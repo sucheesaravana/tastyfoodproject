@@ -1,5 +1,6 @@
 import React from "react";
 import "./Blogs.css";
+import { useNavigate } from "react-router-dom";
 import a7 from "../assets/a7.png";
 import a13 from "../assets/a13.jpg";
 import a3 from "../assets/a3.jpg";
@@ -8,6 +9,7 @@ import b4 from "../assets/b4.png";
 import a30 from "../assets/a30.jpg";
 
 const Blogs = () => {
+  const navigate = useNavigate();
   const posts = [
     {
       id: 1,
@@ -88,7 +90,16 @@ const Blogs = () => {
                   <span>By: {post.author}</span>
                 </div>
 
-                <button className="b-read-btn">Read Now</button>
+                <button
+                  className="b-read-btn"
+                  onClick={() => {
+                    if (post.title === "Creamy Spinach & Mushroom Pasta") {
+                      navigate("/Pastha");
+                    }
+                  }}
+                >
+                  Read Now
+                </button>
               </div>
             </div>
           ))}

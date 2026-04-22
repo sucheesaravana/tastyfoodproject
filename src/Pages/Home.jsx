@@ -8,12 +8,13 @@ import WhyJoin from "../Sessions/WhyJoin";
 import b2 from "../assets/b2.png";
 import b3 from "../assets/b3.png";
 import b4 from "../assets/b4.png";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const images = [b2, b3, b4];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-
+const navigate = useNavigate();
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -35,7 +36,12 @@ function Home() {
         </p>
 
         <div className="hero-buttons">
-          <button className="explore-btn">Explore Blog</button>
+          <button 
+              className="explore-btn"
+              onClick={() => navigate("/Blogs")} // ✅ navigation
+            >
+              Explore Blog
+            </button>
           <button className="write-btn">Write a Blog</button>
         </div>
 
