@@ -138,3 +138,18 @@
   border: none;
   border-top: 1px solid #ddd;
 }
+.register span {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.eye {
+  cursor: pointer;
+}

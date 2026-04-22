@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import b1 from "../assets/b1.png";
 
+const isLoggedIn = false; // later from state/auth
+
+<Link to={isLoggedIn ? "/profile" : "/write"}>
+  Account
+</Link>
 
 function Navbar() {
   return (
@@ -26,9 +31,11 @@ function Navbar() {
 
       {/* Right Section */}
       <div className="navbar-right">
-         <span>Account</span>
-        <Link to="/subscribe">
-          <button className="subscribe-btn">Subscribe</button></Link>
+      <Link to="/write" className="account-link">Account</Link>
+
+      <Link to="/subscribe">
+       <button className="subscribe-btn">Subscribe</button>
+      </Link>
       </div>
      
     </nav>
